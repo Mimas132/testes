@@ -9,16 +9,14 @@ clear
 echo "digite os segundos digitos"
 	read S1
 clear
+echo -n " o resultado é : "
 read -p "$(($P1 $OPERACAO $S1))" RESUL
-echo "$RESUL"
-read -p "Deseja continuar a operação?" O2
-	if [ $02 == "Sim" ]; then
-		echo "Qual o sinal da nova operação?"
-	read OPERACAO2
-		echo "Digite os próximo digitos"
-	read S2
-		echo "O resultado da conta é: $(($RESUL $OPERACAO2 $S2))"
-else
-	"Você deseja sair da operação ou começar uma nova?"
-fi
-
+echo "Deseja continuar a operação?"
+read O2
+if [ $O2 == "sim" ] ;
+then
+	echo " Qual o sina da nova operação? "
+read OPERACAO2
+	echo " quais os novos digitos? "
+read P2
+		echo a resposta é : $((
